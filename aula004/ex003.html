@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><img id="myimage" onclick="trocaImagem()" src="https://w7.pngwing.com/pngs/170/415/png-transparent-incandescent-light-bulb-light.png" alt="teste" style="width: 500;" height="500"></p>
+    <p>aperte na lampada para ligar/desligar a luz</p>
+    <script>
+        function trocaImagem(){
+            var elemento = document.getElementById("myimage");
+            if (elemento.src.includes("https://w7.pngwing.com/pngs/170/415/png-transparent-incandescent-light-bulb-light.png")){
+                elemento.src = "https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg";
+            }
+            else{
+                elemento.src = "https://w7.pngwing.com/pngs/170/415/png-transparent-incandescent-light-bulb-light.png";
+            }
+        }
+    </script>
+</body>
+</html>

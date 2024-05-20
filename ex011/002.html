@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Te amo</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(250, 197, 197);
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    #staticButton {
+        background-color: #fa2020;
+        color: #fff;
+    }
+
+    #movingButton {
+        background-color: #ff629e;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <a href="001.html"><button id="staticButton" class="button">Peitos</button></a>
+    <button id="movingButton" class="button">Nada de Peitos</button>
+</div>
+
+<script>
+    const movingButton = document.getElementById('movingButton');
+
+    document.addEventListener('mousemove', function(e) {
+        const x = e.clientX;
+        const y = e.clientY;
+        movingButton.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    // Impede o comportamento padrão de clicar no botão móvel
+    movingButton.addEventListener('mousedown', function(e) {
+        e.preventDefault();
+    });
+</script>
+
+</body>
+</html>

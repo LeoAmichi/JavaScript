@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bem-Vindo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Faça o cadastro agora
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png"
+          alt=""
+          class="logo"
+          id="clique2"
+        />
+      </h1>
+    </header>
+    <nav>
+    <main>
+      <section class="login">
+        <h3>Cadastro</h3>
+        <hr />
+      </section>
+      <section class="dados">
+        <p>Seu nome</p>
+        <input type="text" placeholder="Nome" id="nome" />
+        <p>Data de nascimento</p>
+        <input type="date" id="data" />
+        <p>Seu e-mail</p>
+        <input type="email" placeholder="E-mail" id="email" />
+        <p>Sua senha</p>
+        <input type="password" id="senha" placeholder="Senha" />
+        <button id="hidden" type="button" onclick="final()" class="ver">
+          <img src="image.png" alt="oio" class="hiden" />
+        </button>
+        <br />
+        <button type="button" id="confirmar" onclick="dados2()">Entrar</button>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        mark.red{
+            background-color: rgba(255, 0, 0, 0.507);
+        }
+        mark.green{
+            background-color: rgba(120, 255, 86, 0.589);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ano bissexto</h1>
+    <button type="button" onclick="calculo()">Verificar</button>
+    <h2>Informe um ano para saber se ele é bissexto</h2>
+    <h3 id="analisando"></h3>
+    <h3 id="ano"></h3>
+    <script>
+        function calculo(){
+        let ano = parseInt(window.prompt('Qual o ano que você quer verificar?'))
+        if(ano % 4 == 0){
+            document.getElementById("analisando").innerHTML =`<strong>Analisando o ano de ${ano}...</strong>`
+            setTimeout(( ) =>  {return document.getElementById("ano").innerHTML = `O ano de ${ano} <mark class = "green">É BISSEXTO✅</mark>`}, 3000)
+        }
+        else{
+            document.getElementById("analisando").innerHTML =`<strong>Analisando o ano de ${ano}...</strong>`
+           setTimeout(() => {document.getElementById("ano").innerHTML = `O ano de ${ano} <mark class = "red">NÃO É BISSEXTO❌</mark>`}, 3000)
+        }
+    }
+    </script>    
+</body>
+</html>

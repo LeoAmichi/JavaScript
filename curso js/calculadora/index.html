@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+
+    <div>
+      <label>Primeiro número</label>
+      <input type="number" id="n1" />
+    </div>
+    <br />
+    <div>
+      <label>Segundo número</label>
+      <input type="number" id="n2" />
+    </div>
+    <br />
+    <div>
+      <span id="result"></span>
+    </div>
+
+    <div>
+      <button id="sum" onclick="calculo()">Somar</button>
+      <button id="subt" onclick="calculo()">Subtrair</button>
+      <button id="mult">Multiplicar</button>
+      <button id="div">Dividir</button>
+    </div>
+
+    <script>
+
+        //campos
+
+      const number1 = document.querySelector("#n1")
+      const number2 = document.querySelector("#n2")
+
+        //botão
+
+        const sum = document.querySelector("#sum")
+        const subt = document.querySelector("#subt")
+        const mult = document.querySelector("#mult")
+        const div = document.querySelector("#div")
+
+        //resultado
+        const result = document.querySelector("#result")
+
+        sum.addEventListener("click", function(){
+           result.innerHTML = Number(number1.value) + Number(number2.value)
+        })
+        subt.addEventListener("click", function(){
+           result.innerHTML = Number(number1.value) - Number(number2.value)
+        })
+        mult.addEventListener("click", function(){
+           result.innerHTML = Number(number1.value) * Number(number2.value)
+        })
+        div.addEventListener("click", function(){
+           result.innerHTML = Number(number1.value) / Number(number2.value)
+        })
+    </script>
+  </body>
+</html>

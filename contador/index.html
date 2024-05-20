@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        img{
+            border: 5px solid black;
+            border-radius: 5px;
+            margin-right: 20px;
+            animation-name: rotate;
+            animation-duration: 10s;
+        }
+        @keyframes rotate{
+            0%{
+                filter: grayscale(100%)
+            }
+            100%{
+                filter: grayscale(0%);
+            }
+        }
+        iframe{
+            border: 10px groove black;
+            animation-name: opacity;
+            animation-duration: 1s;
+        }
+        @keyframes opacity{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Contador entre números</h1>
+    <h2>Digite o número inicial:</h2>
+    <input type="number" placeholder="Inicial" id="inicial" /> <br />
+    <h2>Digite o número final</h2>
+    <input type="number" id="final" placeholder="Final" />
+    <h3>Aperte abaixo no botão para realizar a contagem entre os números</h3>
+    <button onclick="contagem()">Confirmar</button>
+    <button onclick="teste()">AAAAAAA</button>
+    <p id="contagem"></p>
+    <img src="https://vivariomarrecife.com.br/wp-content/uploads/2022/02/Batman-Robert-Pattinson-Filme-Pre-venda-Cinemark-RioMarRecife.jpg" alt="batman">
+
+    <script>
+      function contagem() {
+        let numInicial = Number(document.getElementById("inicial").value);
+        let numFinal = Number(document.getElementById("final").value);
+        var contador = numInicial
+        const intervalo = setInterval(() => {
+                document.getElementById("contagem").innerHTML = "Contagem: " + contador;
+                contador++;
+                if (contador > numFinal) {
+                    var iframe = document.createElement("iframe")
+                    iframe.src = "https://www.youtube.com/embed/gcgKUcJKxIs?si=LYd8y0D2O4DVEhyB";
+                    iframe.width = 600
+                    iframe.height = 470
+                    document.body.appendChild(iframe)
+                    clearInterval(intervalo);
+                }
+            }, 1000);
+      }
+      function teste(){
+       var button = document.createElement("button")
+       button.innerHTML = "Aperte em Mim"
+       document.body.appendChild(button)
+      }
+    </script>
+  </body>
+</html>

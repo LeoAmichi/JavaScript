@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="paragrafo">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro laborum
+      ipsum quaerat placeat autem exercitationem hic repudiandae alias,
+      molestiae, commodi doloribus iusto deleniti provident, magni quis
+      quibusdam pariatur praesentium non!
+    </p>
+    <button type="button" id="botao">Aperte aqui para sumir o texto</button>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit rem quia
+      recusandae voluptatibus adipisci dolorum ut maxime consectetur minima
+      praesentium, totam fugit vel ex earum doloremque. Quis amet repellendus
+      fugit?
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit rem quia
+      recusandae voluptatibus adipisci dolorum ut maxime consectetur minima
+      praesentium, totam fugit vel ex earum doloremque. Quis amet repellendus
+      fugit?
+    </p>
+    <script>
+      var button = document.getElementById("botao");
+
+      button.addEventListener("click", function () {
+        var y = document.getElementById("paragrafo");
+        if (y.style.display === "none") {
+          y.style.display = "block";
+        } else {
+          y.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

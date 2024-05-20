@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        function traducao() {
+            var trad = document.getElementById("paragrafo");
+            if (trad.innerHTML == "Eae seus lixos") {
+                trad.innerHTML = "APERTE EM MIM PARA VER";
+            } else {
+                trad.innerHTML = "Eae seus lixos";
+            }
+        }
+    </script>
+    <div class="button">
+        <button type="button" onclick="alert('Bem vindo')"> APERTE EM MIM AQUI</button>
+    </div>
+    <div class="button"><button id="paragrafo" onclick="traducao()">APERTE EM MIM PARA VER</button></div>
+</body>
+</html>

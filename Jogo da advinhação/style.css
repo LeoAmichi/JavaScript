@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&display=swap");
+
+body {
+  background-image: url(https://cdn.kibrispdr.org/data/923/space-png-images-22.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+header {
+  font-family: "Jersey 10";
+  color: rgb(29, 2, 54);
+  font-size: 30px;
+  padding: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(138, 36, 138, 0.726),
+    rgba(255, 255, 255, 0.267)
+  );
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+}
+nav {
+  font-family: "Jersey 25";
+  color: rgb(29, 2, 54);
+  font-size: 25px;
+  padding: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(138, 36, 138, 0.726),
+    rgba(255, 255, 255, 0.267)
+  );
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  position: flex;
+  width: auto;
+}
+main {
+  font-family: "Jersey 25";
+  color: rgb(29, 2, 54);
+  font-size: 40px;
+  padding: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgba(138, 36, 138, 0.726),
+    rgba(255, 255, 255, 0.267)
+  );
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  border: 100px;
+  height: 400px;
+}
+#chute {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.315);
+  font-size: 40px;
+  font-family: "Jersey 25";
+  color: rgb(29, 2, 54);
+}
+#sorteio {
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: rgba(136, 42, 165, 0.671);
+}
+::placeholder {
+  font-weight: 600;
+  font-size: larger;
+  color: black;
+}
+#test {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+img {
+  height: 150px;
+  border-radius: 10px;
+}
+.aleatorio{
+  height: 2.5em;
+  font-size: 25px;
+  font-family: "Jersey 25";
+  color: rgb(29, 2, 54);
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: underline;
+  cursor: pointer;
+}

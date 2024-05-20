@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Dados</h1>
+    <button type="button" onclick="inicio()" id="image">CLIQUE AQUI PARA COMEÇAR</button>
+    <input type="text" id="nome"> 
+    <button type="button" onclick="teste()">Testar</button>
+    <p id="mensagem"></p>
+    <script>
+        function inicio(){
+            let nome = window.prompt('Qual o seu nome?');
+            window.alert(`Olá, ${nome} seja bem vindo`);
+ 
+        }
+
+        function teste(){
+            let nome = document.getElementById("nome");
+            let mensagem = document.getElementById("mensagem")
+            mensagem.innerHTML = `Boa noite, ${nome.value}`;
+        }
+    </script>
+</body>
+</html>
+

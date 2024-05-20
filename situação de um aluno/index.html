@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: rgba(255, 0, 0, 0.514);
+        }
+        .yellow{
+            background-color: rgba(255, 255, 52, 0.541);
+        }
+        .green{
+            background-color: rgba(3, 197, 3, 0.658);
+        }
+    </style>
+</head>
+<body>
+    <h1>Situação de um aluno</h1>
+    <button type="button" onclick="calculo()">Entrar com notas</button>
+    <h2>Clique no botão acima para informas as notas do aluno</h2>
+    <h3 id="analisando"></h3>
+    <h3 id="notas"></h3>
+    <h3 id="final"></h3>
+    <script>
+        function calculo(){
+            let nome = window.prompt("Qual é o nome do aluno?")
+            let nota1 = parseInt(window.prompt(`Qual é a primeira nota de ${nome}`))
+            let nota2 = parseInt(window.prompt(`Qual é a segunda nota de ${nome}`))
+            var media = (nota1 + nota2) / 2
+            document.getElementById("analisando").innerHTML = `Analisando a situação de ${nome}`
+           setTimeout(() => {document.getElementById("notas").innerHTML = `Com as notas ${nota1} e ${nota2}, a média é ${media}`
+            if(media < 3){
+                document.getElementById("final").innerHTML = `Com a média abaixo de 3.0, o aluno está <mark class = "red">REPROVADO</mark>`
+            }
+            else if (media > 3 && media < 6){
+                document.getElementById("final").innerHTML = `Com a média entre 3.0 e 6.0, o aluno está em <mark class = "yellow">RECUPERAÇÂO</mark>`
+            }
+            else if (media > 6){
+                document.getElementById("final").innerHTML = `Com a média acima de 6.0, o aluno está <mark class = "green">APROVADO</mark>`
+            }
+        }, 3000)
+    }
+    </script>
+</body>
+</html>

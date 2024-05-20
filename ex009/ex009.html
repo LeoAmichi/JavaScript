@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ANTES E DEPOIS</h1>
+    <button type="button" onclick="calculo()">Antecessor e Sucessor</button>
+    <script>
+        function calculo(){
+            let num = parseInt(window.prompt('Digite um número qualquer'))
+            let antecessor = num - 1
+            let sucessor = num + 1
+            window.alert (`Antes de ${num}, temos o número ${antecessor} \nDepois de ${num}, temos o número ${sucessor}`)
+        }
+    </script>
+</body>
+</html>

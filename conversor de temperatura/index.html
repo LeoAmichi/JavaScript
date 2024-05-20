@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Conversor de Temperaturas</h1>
+    <button type="button" id="calculo" onclick="calculo()">Converter</button>
+    <h2 id="kelvin"></h2>
+    <h2 id="Fahrenheint"></h2>
+    <script>
+      function calculo() {
+        let conversao, x, y;
+        conversao = parseInt(
+          window.prompt("Digite uma temperatura em C (Celsius)")
+        );
+        x = document.getElementById("kelvin");
+        y = document.getElementById("Fahrenheint");
+        x.innerHTML = "Kelvin:" + (conversao + 273);
+        y.innerHTML = "Fahrenheint: " + ((conversao * 9) / 5 + 32);
+      }
+    </script>
+  </body>
+</html>

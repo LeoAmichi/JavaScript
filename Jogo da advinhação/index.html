@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BEM-VINDO AO JOGO DA ADVINHAÇÃO</h1>
+    </header>
+    <nav>
+      <h2>COMO JOGAR</h2>
+      <ul>
+        <li>1- Digite seu chute na caixa abaixo e confirme no botão</li>
+        <li>2- O jogo irá avisar se está próximo do número secreto</li>
+        <li>O NÚMERO ALEATÓRIO ESTÁ ENTRE 0 E 10</li>
+        <button onclick="reloadPage()" class="aleatorio">Aperte aqui para sortear um novo número aleatório</button>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <h3>TENTE ACERTAR O NÚMERO ALEATÓRIO</h3>
+        <input type="text" placeholder="Chute" id="chute" />
+        <button type="button" id="sorteio" onclick="sorteio()">Confirmar</button>
+        <div id="test"></div>
+        <img
+          src="https://media1.tenor.com/m/uwpLU7-SVvAAAAAC/el-gato-con-botas-puss-in-boots.gif"
+          alt="gatinho"
+        />
+      </div>
+      <script>
+         var iframe = document.createElement("iframe")
+      </script>
+    </main>
+  </body>
+</html>
